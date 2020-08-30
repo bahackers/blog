@@ -11,11 +11,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 # SITEURL = 'https://github.com/bahackers/blog/'
-<<<<<<< HEAD:publishconf.py
 SITEURL = 'https://denise.matehackers.org/bahackers/'
-=======
-SITEURL = 'http://denise.matehackers.org/bahackers/'
->>>>>>> db2baa39c56fb295d7a9bafcdd7b9c0989ce6d39:publishconf.py
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
