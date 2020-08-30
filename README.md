@@ -4,7 +4,7 @@ Blog do Bah Hackers. Python 3.6 e Pelican.
 
 ## Desenvolvimento:
 
-Clonar o repositório.
+Clonar o repositório e entrar na pasta clonada.
 
 Criar ambiente virtual.
 ```
@@ -23,10 +23,9 @@ Ativar o ambiente virtual.
 source venv/bin/activate
 ```
 
-Entrar na pasta do blog e instalar as dependências:
+Instalar as dependências:
 
 ```
-cd blog
 pip install -r requirements.txt
 ```
 
@@ -41,3 +40,8 @@ Ver no navegador:
 ```
 firefox output/index.html
 ```
+
+
+Adicionar imagens no artigo:
+- Coloque a imagem dentro de `content/images`
+- Use a seguinte sintaxe: `![Alt-text para a imagem]({static}/images/ARQUIVO.EXTENSÃO)`
