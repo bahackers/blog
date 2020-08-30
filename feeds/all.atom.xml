@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Bah! Hackers Security Group blog</title><link href="https://github.com/bahackers/blog/" rel="alternate"></link><link href="https://github.com/bahackers/blog/feeds/all.atom.xml" rel="self"></link><id>https://github.com/bahackers/blog/</id><updated>2020-08-30T14:01:00-03:00</updated><entry><title>Regras do Grupo</title><link href="https://github.com/bahackers/blog/regras-do-grupo.html" rel="alternate"></link><published>2020-08-30T14:01:00-03:00</published><updated>2020-08-30T14:01:00-03:00</updated><author><name>Mate Hackers</name></author><id>tag:github.com,2020-08-30:/bahackers/blog/regras-do-grupo.html</id><summary type="html">&lt;p&gt;Group Rules&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regra número 1&lt;/strong&gt;: respeite as mina e respeite as mona.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regra número 2&lt;/strong&gt;: veja a regra número 1.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category><category term="regras"></category><category term="misc"></category></entry><entry><title>Hello World</title><link href="https://github.com/bahackers/blog/hello-world.html" rel="alternate"></link><published>2020-08-30T10:01:00-03:00</published><updated>2020-08-30T10:01:00-03:00</updated><author><name>Mate Hackers</name></author><id>tag:github.com,2020-08-30:/bahackers/blog/hello-world.html</id><summary type="html">&lt;p&gt;Beginning of the Bah! Hackers blog&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;                   __,--&amp;#39;\&lt;/span&gt;
+&lt;span class="err"&gt;             __,--&amp;#39;    :. \.&lt;/span&gt;
+&lt;span class="err"&gt;        _,--&amp;#39;              \`.&lt;/span&gt;
+&lt;span class="err"&gt;       /|\       `          \ `.&lt;/span&gt;
+&lt;span class="err"&gt;      / | \        `:        \  `/&lt;/span&gt;
+&lt;span class="err"&gt;     / &amp;#39;|  \        `:.       \&lt;/span&gt;
+&lt;span class="err"&gt;    / , |   \                  \&lt;/span&gt;
+&lt;span class="err"&gt;   /    |:   \              `:. \&lt;/span&gt;
+&lt;span class="err"&gt;  /| &amp;#39;  |     \ :.           _,-&amp;#39;`.&lt;/span&gt;
+&lt;span class="err"&gt;\&amp;#39; |,  / \   ` \ `:.     _,-&amp;#39;_|    `/&lt;/span&gt;
+&lt;span class="err"&gt;   &amp;#39;._;   \ .   \   `_,-&amp;#39;_,-&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt; \&amp;#39;    `- .\_   |\,-&amp;#39;_,-&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;             `--|_,`&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;                     `/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can find us in &lt;a href="http://webchat.freenode.net/?channels=bahackers"&gt;#bahackers&lt;/a&gt; on &lt;a href="http://freenode.org"&gt;irc.freenode.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Porto Alegre - RS&lt;/p&gt;</content><category term="misc"></category><category term="first"></category><category term="misc"></category></entry></feed>
