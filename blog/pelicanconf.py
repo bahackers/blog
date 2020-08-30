@@ -4,12 +4,15 @@
 AUTHOR = 'Mate Hackers'
 SITENAME = 'Bah! Hackers Security Group blog'
 SITEURL = ''
+STATIC_PATHS = ['images']
+
+THEME = './themes/bootstrap2-dark'
 
 PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
 
-DEFAULT_LANG = 'pt'
+DEFAULT_LANG = 'pt-br'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -30,4 +33,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS=True
