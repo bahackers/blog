@@ -75,12 +75,12 @@ pipenv run gh
 Assumindo blog clonado em **/var/www/pelican**
 
 ```sh
-www-data@denise~: git clone https://github.com/bahackers/blog.git ~/pelican
+www-data@denise~: git clone -b source https://github.com/bahackers/blog.git ~/pelican
 ```
 
 Cronjob para sincronizar publicações de hora em hora:
 
 ```cron
-@hourly pushd ~/pelican && git pull origin main && ~/.local/bin/pipenv run denise
+@hourly pushd ~/pelican && git pull origin source && ~/.local/bin/pipenv run denise
 ```
 
