@@ -87,6 +87,6 @@ www-data@denise~: git clone -b source https://github.com/bahackers/blog.git ~/pe
 Cronjob para sincronizar publicações de hora em hora:
 
 ```cron
-@hourly pushd ~/pelican && git pull origin source && ~/.local/bin/pipenv run denise
+@hourly pushd ~/pelican && rsync -avvhSP /home/bahackers/blog/ ./ && ~/.local/bin/pipenv run denise
 ```
 
