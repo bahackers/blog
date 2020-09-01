@@ -25,6 +25,7 @@ Sistema operacional: Kali Linux 64-bit (2020.3) https://www.kali.org
 ### 1.1 Alternativas
 
 Também é possível utilizar:  
+
 - Kali Live (inicializar um computador que possui outro sistema operacional a partir de um pendrive com Kali)  
 - Kali em algum dispositivo com arquitetura arm64, como Raspberry Pi  
 - Máquinas virtuais com Kali Linux (usando VirtualBox ou derivados)  
@@ -44,6 +45,7 @@ Também é possível utilizar:
 Nem todos os pacotes ou programas disponíveis na versão "full" do Kali foram portados para a imagem do Raspberry Pi e você poderá ter que ficar garimpando na mão algumas coisas.  
 
 Ex.:  
+
 - listas de senhas que vem por padrão no `/usr/share/wordlists/`  
 - Burp Suite (não tem distribuição)  
 - Gobuster (tem que instalar Go e gerar o binário para poder instalar/usar)  
@@ -58,7 +60,7 @@ Try Hack Me é uma plataforma para aprendizado de questões relacionadas à segu
 
 ### 2.1 Configurando<a name="try-hack-me-setup"></a>
 
-- Criar conta em https://tryhackme.com  
+- Criar conta em [https://tryhackme.com](https://tryhackme.com)  
 - Verificar o e-mail da conta (para ativar as funcionalidades e em caso de precisar recuperar a senha)  
 - Baixar o arquivo de configuração OpenVPN (Access Machines / botão "Download My Configuration File")  
 - Instalar Openvpn no seu sistema operacional, se ainda não estiver instalado  
@@ -94,4 +96,3 @@ Através dessa tarefa, você vai executar alguns escaneamentos básicos e aprend
 Entre as questões do desafio, a mais complicada é certamente a última, em que é necessário executar todos os scripts da categoria de vulnerabilidades (`vuln`) para obter a resposta. Entretanto, se você tiver dificuldade com as outras questões, persista! Procure informações no manual. Peça ajuda! Visite o [site do Mate Hackers](https://matehackers.org) e encontre formas de contatar o grupo.  
 
 ![Captura de tela do Try Hack Me mostrando todas tarefas em verde, completas]({static}/images/tryhackme/tryhackme-sala-nmap-completa.png)
-
