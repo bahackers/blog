@@ -50,6 +50,12 @@ Adicionar imagens no artigo:
 
 ## Produção
 
+Pra quem não tem pipenv:
+
+```sh
+python3 -m pip install --user --upgrade pipenv
+```
+
 Rodar pipenv localmente pra garantir que o ambiente virtual seja criado:
 
 ```sh
