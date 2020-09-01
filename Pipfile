@@ -26,5 +26,7 @@ Unidecode = "==1.1.1"
 python_version = "3.7"
 
 [scripts]
-publicar = 'pelican content -o output -s publishconf.py -d'
+## denise.matehackers.org/bahackers/
+denise = 'pelican content -o /var/www/denise/bahackers -s publishconf.py'
+gh = 'make publish'
 
