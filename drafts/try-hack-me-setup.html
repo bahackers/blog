@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Try Hack Me - Terça Sem Fim - 01-set-2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mate Hackers">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://denise.matehackers.org/bahackers/theme/css/bootstrap.dark.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="https://denise.matehackers.org/bahackers/theme/css/bootstrap-responsive.dark.css" rel="stylesheet">
+        <link href="https://denise.matehackers.org/bahackers/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://denise.matehackers.org/bahackers/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://denise.matehackers.org/bahackers/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://denise.matehackers.org/bahackers/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://denise.matehackers.org/bahackers/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://denise.matehackers.org/bahackers/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="https://denise.matehackers.org/bahackers/" type="application/atom+xml" rel="alternate" title="Bah! Hackers Security Group blog ATOM Feed" />
+    <link href="https://denise.matehackers.org/bahackers/feeds/rss.xml" type="application/atom+xml" rel="alternate" title="Bah! Hackers Security Group blog RSS Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="https://denise.matehackers.org/bahackers/index.html">Bah! Hackers Security Group blog </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="https://denise.matehackers.org/bahackers/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="https://denise.matehackers.org/bahackers/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Try Hack Me - Terça Sem Fim - 01-set-2020">
+                                        Try Hack Me - Terça Sem Fim - 01-set-2020
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2020-09-01T18:00:00-03:00">
+        <i class="icon-calendar"></i>Tue 01 September 2020
+</abbr>
+<span class="label">By</span>
+<a href="https://denise.matehackers.org/bahackers/author/mate-hackers.html"><i class="icon-user"></i>Mate Hackers</a>
+<span class="label">Category</span>
+<a href="https://denise.matehackers.org/bahackers/category/blog-hacking.html"><i class="icon-folder-open"></i>blog, hacking</a>.
+
+
+<span class="label">Tags</span>
+	<a href="https://denise.matehackers.org/bahackers/tag/tryhackme.html"><i class="icon-tag"></i>tryhackme</a>
+	<a href="https://denise.matehackers.org/bahackers/tag/hacking.html"><i class="icon-tag"></i>hacking</a>
+	<a href="https://denise.matehackers.org/bahackers/tag/nmap.html"><i class="icon-tag"></i>nmap</a>
+</footer><!-- /.post-info -->                </div>
+                <h2>1. Configuração<a name="config"></a></h2>
+<p>A configuração da máquina em que os desafios estão sendo realizados, para demonstrar que você não precisa de uma máquina top de linha simplesmente para começar a aprender - se tiver um computador que seja ao menos de arquitetura 64-bits já está de bom tamanho para a maioria das coisas (apesar de alguns processos serem mais demorados se a máquina não for muito potente).</p>
+<p><strong>Netbook Acer Aspire 1410</strong></p>
+<div class="highlight"><pre><span></span><code><span class="err">Intel Celeron 1.2 GHz, 800 MHz (64-bits)</span>
+<span class="err">2GB memória</span>
+<span class="err">240 GB SDD</span>
+<span class="err">Sistema operacional: Kali Linux 64-bit (2020.3) https://www.kali.org</span>
+</code></pre></div>
+
+
+<p><img alt="Papel de parede do Kali Linux" src="https://denise.matehackers.org/bahackers/images/tryhackme/kali-strips-4x3.png"></p>
+<h3>1.1 Alternativas</h3>
+<p>Também é possível utilizar:
+- Kali Live (inicializar um computador que possui outro sistema operacional a partir de um pendrive com Kali)
+- Kali em algum dispositivo com arquitetura arm64, como Raspberry Pi
+- Máquinas virtuais com Kali Linux (usando VirtualBox ou derivados)</p>
+<h3>1.2 Algumas dificuldades que podem ser encontradas utilizando essas alternativas</h3>
+<p><strong>VirtualBox</strong>
+- Dificuldade de configuração de hardware (usar interfaces do computador host, mapeá-las para a máquina virtual, etc).</p>
+<p><strong>Sistema live</strong>
+- Persistência de configurações ou de informações.</p>
+<p><strong>Raspberry Pi</strong></p>
+<p>Nem todos os pacotes ou programas disponíveis na versão "full" do Kali foram portados para a imagem do Raspberry Pi e você poderá ter que ficar garimpando na mão algumas coisas.
+Ex.:
+- listas de senhas que vem por padrão no <code>/usr/share/wordlists/</code>
+- Burp Suite (não tem distribuição)
+- Gobuster (tem que instalar Go e gerar o binário para poder instalar/usar)</p>
+<h2>2. Try Hack Me (Tente Me Hackear)<a name="try-hack-me"></a></h2>
+<p><img alt="Logo Try Hack Me, uma nuvem vermelha chovendo números binários" src="https://denise.matehackers.org/bahackers/images/tryhackme/tryhackme-logo.png"></p>
+<p>Try Hack Me é uma plataforma para aprendizado de questões relacionadas à segurança de sistemas e de aplicações. Apesar de ser toda em inglês e não ter localização para português brasileiro, ela é bastante intuitiva e oferece ferramentas para que se comece rapidamente a explorar essas questões de segurança e aprender. Se você tem dificuldades com o idioma, vá utilizando alguma ferramenta de tradução, mas aproveite e vá anotando palavras que você não conhece - para se familiarizar com elas -; o inglês é a língua franca da informática e essa é mais uma oportunidade de ter contato com o idioma, praticar e aprender.</p>
+<h3>2.1 Configurando<a name="try-hack-me-setup"></a></h3>
+<ul>
+<li>
+<p>Criar conta em https://tryhackme.com</p>
+</li>
+<li>
+<p>Verificar o e-mail da conta (para ativar as funcionalidades e em caso de precisar recuperar a senha)</p>
+</li>
+<li>
+<p>Baixar o arquivo de configuração OpenVPN (Access Machines / botão "Download My Configuration File")</p>
+</li>
+<li>
+<p>Instalar Openvpn no seu sistema operacional, se ainda não estiver instalado</p>
+</li>
+<li>
+<p>Conectar usando o arquivo de configuração baixado: <code>sudo openvpn ENDEREÇO_DO_ARQUIVO_DE_CONFIGURAÇÃO</code></p>
+</li>
+<li>
+<p>Inicializar um servidor (botão "Deploy" no "room" de boas vindas - Welcome)</p>
+</li>
+<li>
+<p>Aguardar o servidor carregar e fornecer um endereço de IP</p>
+</li>
+<li>
+<p>Abrir o endereço de IP no navegador</p>
+</li>
+<li>
+<p>Copiar a flag que aparece e colar na resposta da tarefa "Access your first machine"</p>
+</li>
+</ul>
+<p>Se você conseguiu: Parabéns! Agora você consegue implantar uma máquina no Try Hack Me e acessá-la. Nem sempre vai ser somente pelo navegador, algumas vezes pelo terminal ou usando outros programas, mas o processo de conectar o OpenVPN e fazer Deploy é basicamente esse.</p>
+<p>Se não conseguiu: Não desiste! Busca na internet o erro que está dando, compartilha lá no Telegram ou na lista do Mate Hackers onde você travou e quem sabe alguém consiga te ajudar.</p>
+<h3>2.2 Room Nmap<a name="room-nmap"></a></h3>
+<p><img alt="Logo da sala Nmap com a legenda: parte da série Red Primer, introdução ao escaneamento" src="https://denise.matehackers.org/bahackers/images/tryhackme/room-nmap.png"></p>
+<p>O primeiro "room" (sala) que vamos explorar (depois do de Boas Vindas) é o room do Nmap, por esta ser uma sala introdutória a uma ferramenta que é importante e útil na investigação de máquinas. Como vamos interagir com uma das máquinas da TryHackMe, é preciso que a conexão via OpenVPN tenha sido estabelecida (ou precisa pagar a assinatura para utilizar uma das máquinas via navegador).</p>
+<p>Para completar os desafios da sala, é sempre necessário entrar nela, clicando em "Join Room". Após, enquanto usar a conta gratuita sempre haverá o aviso que precisa assinar para assistir os vídeos, mas de modo geral não é necessário pagar para realizar as atividades (existem algumas salas que são fechadas só para assinantes, nenhumas das quais estaremos completando aqui).</p>
+<h4><strong>Tarefa 1: Deploy</strong></h4>
+<p>Na pŕimeira tarefa, só é necessário inicializar a máquina (clicando no botão "Deploy") e confirmar no botão verde ("Question Done"). Aguarde até o endereço IP da máquina aparecer.</p>
+<h4><strong>Tarefa 2: Nmap Quiz (Leia o manual)</strong></h4>
+<p>A segunda tarefa busca ajudar você a se familiarizar com alguns parâmetros muito utilizados com o Nmap. Todas as respostas para as questões estão no manual da ferramenta (no Linux, você pode acessar através do comando 'man NOME_DA_FERRAMENTA', no caso: <code>man nmap</code>). Nessas questões estão a resposta para alguns comandos que serão utilizados na tarefa seguinte.</p>
+<h4><strong>Tarefa 3: Nmap Scanning (Nmap na prática, usando para escanear uma máquina)</strong></h4>
+<p>Através dessa tarefa, você vai executar alguns escaneamentos básicos e aprender a interpretar os resultados. Como temos alguns processos que são mais demoradas para serem realizadas (por exemplo, escanamento agressivo), pode ser interessante utilizar o parâmetro "verboso" para ter certeza que o programa está avançando e o computador não travou, rede não caiu, etc.</p>
+<p>Entre as questões do desafio, a mais complicada é certamente a última, em que é necessário executar todos os scripts da categoria de vulnerabilidades (<code>vuln</code>) para obter a resposta. Entretanto, se você tiver dificuldade com as outras questões, persista! Procure informações no manual. Peça ajuda! Visite o <a href="https://matehackers.org">site do Mate Hackers</a> e encontre formas de contatar o grupo.</p>
+<p><img alt="Captura de tela do Try Hack Me mostrando todas tarefas em verde, completas" src="https://denise.matehackers.org/bahackers/images/tryhackme/tryhackme-sala-nmap-completa.png"></p>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://bahackers.github.io/"><i class="icon-external-link"></i>Bah! Hackers</a></li>
+    <li><a href="https://github.com/bahackers"><i class="icon-external-link"></i>Github</a></li>
+    <li><a href="https://pergute-nos.o.link"><i class="icon-external-link"></i>Telegram</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="https://denise.matehackers.org/bahackers/feeds/atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+<li><a href="https://denise.matehackers.org/bahackers/feeds/rss.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>rss feed</a></li>
+    <li><a href="regras-do-grupo.html"><i class="icon-Group Rules (pt-br)-sign icon-large"></i>Group Rules (pt-br)</a></li>
+    <li><a href="regras-do-grupo.html"><i class="icon-Regras do Grupo-sign icon-large"></i>Regras do Grupo</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="https://denise.matehackers.org/bahackers/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://denise.matehackers.org/bahackers/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="https://denise.matehackers.org/bahackers/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
