@@ -29,4 +29,5 @@ python_version = "3.7"
 ## denise.matehackers.org/bahackers/
 denise = 'pelican content -o /var/www/denise/bahackers -s publishconf.py'
 gh = 'make publish'
+teste = 'pelican content -o output -s publishconf.py -d'
 
