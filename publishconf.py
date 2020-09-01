@@ -13,12 +13,14 @@ from pelicanconf import *
 # SITEURL = 'https://github.com/bahackers/blog/'
 SITEURL = 'https://denise.matehackers.org/bahackers/'
 RELATIVE_URLS = False
+WITH_FUTURE_DATES = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-AUTHOR_FEED_ATOM = 'feeds/{slug}.atom.xml'
-AUTHOR_FEED_RSS = 'feeds/{slug}.rss.xml'
+FEED_DOMAIN = 'https://denise.matehackers.org/bahackers/'
+FEED_ATOM = 'feeds/atom.xml'
+FEED_RSS = 'feeds/rss.xml'
+# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# AUTHOR_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# AUTHOR_FEED_RSS = 'feeds/{slug}.rss.xml'
 RSS_FEED_SUMMARY_ONLY = False
 
 DELETE_OUTPUT_DIRECTORY = True

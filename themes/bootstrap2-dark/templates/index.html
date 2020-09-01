@@ -1,60 +1,58 @@
 {% extends "base.html" %}
-
 {% block content_title %}{% endblock %}
-
 {% block content %}
-    {% if articles %}
-        {% for article in (articles_page.object_list if articles_page else articles) %}
-            <div class="article">
-                <section id="content">
-                    <article>
-                        <header>
-                            <h1>
-                                <a href="{{ pagename }}"
-                                        rel="bookmark"
-                                        title="Permalink to {{ article.title }}">
-                                        {{ article.title}}
-                                </a>
-                                {% include 'twitter.html' %}
-                            </h1>
-                        </header>
-                        <div class="entry-content">
-                            <div class="well">
-                                    {% include 'article_infos.html' %}
-                            </div>
-                            {{ article.content }}
-                        </div><!-- /.entry-content -->
+{% if articles %}
+    {% for article in (articles_page.object_list if articles_page else articles) %}
+        <div class="article">
+             <section id="content">
+                 <article>
+                     <header>
+                         <h1>
+                             <a href="{{ article.url }}"
+                                     rel="bookmark"
+                                     title="Permalink to {{ article.title }}">
+                                     {{ article.title}}
+                             </a>
+                             {% include 'twitter.html' %}
+                         </h1>
+                     </header>
+                     <div class="entry-content">
+                         <div class="well">
+                                 {% include 'article_infos.html' %}
+                         </div>
+                         {{ article.content }}
+                     </div><!-- /.entry-content -->
 
-                        {% if DISQUS_SITENAME %}
-                            <div class="comments">
-                                <h2>Comments !</h2>
-                                    <div id="disqus_thread"></div>
-                                    <script type="text/javascript">
-                                       var disqus_identifier = "{{ article.url }}";
-                                       (function() {
-                                            var dsq = document.createElement('script');
-                                            dsq.type = 'text/javascript'; dsq.async = true;
-                                            dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-                                            (document.getElementsByTagName('head')[0] ||
-                                             document.getElementsByTagName('body')[0]).appendChild(dsq);
-                                      })();
-                                    </script>
-                            </div>
-                        {% endif %}
-                    </article>
-                </section>
+                     {% if DISQUS_SITENAME %}
+                         <div class="comments">
+                             <h2>Comments !</h2>
+                                 <div id="disqus_thread"></div>
+                                 <script type="text/javascript">
+                                    var disqus_identifier = "{{ article.url }}";
+                                    (function() {
+                                         var dsq = document.createElement('script');
+                                         dsq.type = 'text/javascript'; dsq.async = true;
+                                         dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+                                         (document.getElementsByTagName('head')[0] ||
+                                          document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                   })();
+                                 </script>
+                         </div>
+                     {% endif %}
+                 </article>
+             </section>
 
-                    <!-- <div class="summary">{{ article.summary }}
-                            <a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
-                    </div> -->
-            </div>
-            {% if not loop.last %}
-                <hr />
-            {% endif %}
-        {% endfor %}
-    {% endif %}
+                 <!-- <div class="summary">{{ article.summary }}
+                         <a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
+                 </div> -->
+         </div>
+         {% if not loop.last %}
+             <hr />
+         {% endif %}
+    {% endfor %}
+{% endif %}
 
-    {% if articles_page and articles_paginator.num_pages > 1 %}
+        {% if articles_page and articles_paginator.num_pages > 1 %}
         <div class="pagination">
         <ul>
                 {% if articles_page.has_previous() %}
@@ -74,15 +72,14 @@
         </ul>
         </div>
 
-    {% else %}
+{% else %}
         {% if pages %}
-            <section id="content" class="body">
-            <h1>Pages</h1>
-            {% for page in pages %}
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-            {% endfor %}
-            </section>
+                <section id="content" class="body">
+                <h1>Pages</h1>
+                {% for page in pages %}
+                        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+                </section>
         {% endif %}
-    {% endif %}
-
+{% endif %}
 {% endblock content %}

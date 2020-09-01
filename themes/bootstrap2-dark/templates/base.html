@@ -41,15 +41,14 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <!-- <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico"> -->
-    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/logo.jpg">
-    <!-- <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png"> -->
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png">
 
     <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
-    {% if FEED_ALL_RSS %}
-        <link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% if FEED_RSS %}
+    <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
     {% endif %}
 
   </head>
@@ -70,14 +69,12 @@
               {% for title, link in MENUITEMS %}
                   <li><a href="{{ link }}">{{ title }}</a></li>
               {% endfor %}
-
               {% if DISPLAY_PAGES_ON_MENU %}
-                  {% for page in pages %}
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-                  {% endfor %}
-                  <li class="divider-vertical"></li>
+              {% for page in pages %}
+                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+              {% endfor %}
+                          <li class="divider-vertical"></li>
               {% endif %}
-
               {% for cat, null in categories %}
                   <li {% if cat == category %}class="active"{% endif %}>
                     <a href="{{ SITEURL }}/{{ cat.url }}">
@@ -86,9 +83,9 @@
                   </li>
               {% endfor %}
 
-              <ul class="nav pull-right">
-                    <li><a href="{{ SITEURL }}/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-              </ul>
+                          <ul class="nav pull-right">
+                                <li><a href="{{ SITEURL }}/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
             </ul>
             <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->

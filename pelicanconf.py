@@ -13,16 +13,19 @@ PATH = 'content'
 TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'en'
+WITH_FUTURE_DATES = True
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-FEED_ALL_RSS = None
+# FEED_ATOM = None
+# FEED_RSS = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-# FEED_ALL_ATOM = 'feeds/all.atom.xml'
-# FEED_ALL_RSS = 'feeds/all.rss.xml'
+
+# FEED_DOMAIN = 'https://denise.matehackers.org/bahackers/'
+# FEED_ATOM = 'feeds/all.atom.xml'
+# FEED_RSS = 'feeds/all.rss.xml'
 # CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 # AUTHOR_FEED_ATOM = 'feeds/%s.atom.xml'
 # AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
@@ -41,8 +44,8 @@ LINKS = (('Bah! Hackers', 'http://bahackers.github.io/'),
          ('Telegram', 'https://pergute-nos.o.link'),)
 
 # Social widget
-SOCIAL = (('Group Rules (pt-br)', 'regras-do-grupo'),
-          ('Regras do Grupo', 'regras-do-grupo'),)
+SOCIAL = (('Group Rules (pt-br)', 'regras-do-grupo.html'),
+          ('Regras do Grupo', 'regras-do-grupo.html'),)
 
 DEFAULT_PAGINATION = 5
 
